@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Templates_Header : System.Web.UI.UserControl
+public partial class _default : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
