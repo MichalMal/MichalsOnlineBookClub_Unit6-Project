@@ -1,0 +1,18 @@
+﻿body {
+  padding-top: 100px;
+  margin: 0; }
+  body .navbar {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; }
+    body .navbar > .navItem {
+      padding: 0 15px; }
+      body .navbar > .navItem h1, body .navbar > .navItem h3 {
+        margin: 0; }
+      body .navbar > .navItem.heading {
+        flex-grow: 1; }
