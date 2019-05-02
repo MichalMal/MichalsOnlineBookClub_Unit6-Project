@@ -1,9 +1,0 @@
-﻿[
-  {
-    "outputFile": "Content/Styles/styles.css",
-    "inputFile": "Content/Styles/SCSSstyles.scss",
-    "minify": {
-      "enabled": false
-    }
-  }
-]
