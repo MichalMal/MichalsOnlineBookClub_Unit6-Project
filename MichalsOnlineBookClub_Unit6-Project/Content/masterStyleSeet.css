@@ -1,4 +1,8 @@
-﻿.vcenter {
+﻿body, html, #form1 {
+    height: 100%
+}
+
+.vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
@@ -9,7 +13,7 @@
 }
 
 .bg-1 {
-    background-color: #1abc9c; /* Green */
+    background-color: #79a5bd; /* Light Blue */
     color: #ffffff;
 }
 
@@ -29,7 +33,10 @@
 }
 
 .home-banner {
-    padding: 200px 100px;
+    padding: 70px 15px;
+    min-height: 100%;
+    overflow: hidden;
+    margin-bottom: -50px
 }
 
     .home-banner > .row {
@@ -42,11 +49,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .home-banner {
-        padding: 200px 15px 15px 15px;
-    }
+    /*.home-banner {
+        padding: 15px;
+    }*/
 }
 
 .footer-copyright {
-    padding: 15px;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
 }

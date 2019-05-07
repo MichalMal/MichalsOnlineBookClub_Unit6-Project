@@ -23,9 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body class="bg-1">
     <form id="form1" runat="server">
-        <!-- navbar that is default for all pages -->
+        <!-- navbar that is default for all pages -->   
 
 
         <nav class="navbar-fixed-top navbar-inverse">
@@ -36,26 +36,29 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Online Book Club</a>
+                    <a class="navbar-brand" href="/">Online Book Club</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="#">List Of Books</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="bookCollection.aspx">List Of Books</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                        <li><a href="about.aspx">About</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        <li><a href="userRegistrationForm.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="userLogInForm.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- navbar end --> 
 
-        <div>
+    <div class="container home-banner">
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
             </asp:ContentPlaceHolder>
+        </div>
             <!-- Footer -->
             <footer class="page-footer font-small bg-4">
                 <div class="footer-copyright text-center">
@@ -63,7 +66,7 @@
                         <img src="Images/bootstrap.ico" />BootStrap</a> style assets.
                 </div>
             </footer>
-        </div>
+            <!-- footer end -->
     </form>
 </body>
 </html>

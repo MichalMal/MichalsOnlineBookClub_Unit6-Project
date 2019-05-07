@@ -5,7 +5,6 @@
     <title>Michal's Online Book Club</title>
 </asp:Content>
 <asp:Content ID="body" ContentPlaceHolderID="ContentPlaceHolderBody" runat="Server">
-    <div class="container-fluid bg-1 home-banner">
         <div class="row">
             <div class="col-sm-4 text-right vcenter">
                 <h2 class="margin">Welcome To Michal's Online Book Club</h2>
@@ -19,8 +18,6 @@
                             <div class="col-sm-4">
                                 <img src="Images/51A685AMYoL._SL160_.jpg" />
                             </div>
-                            <div class="col-sm-8">Description description </div>
-
                         </div>
                         <div class="item">
                             <img src="Images/51wTLf4JVwL._SL160_.jpg" />
@@ -31,9 +28,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </div>
 </asp:Content>
 
