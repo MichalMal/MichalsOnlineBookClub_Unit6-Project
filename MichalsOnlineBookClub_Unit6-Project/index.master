@@ -45,6 +45,9 @@
                         <li><a href="contact.aspx">Contact</a></li>
                         <li><a href="about.aspx">About</a></li>
                     </ul>
+
+                    <!-- if statement loged in -->
+
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="userRegistrationForm.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                         <li><a href="userLogInForm.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
