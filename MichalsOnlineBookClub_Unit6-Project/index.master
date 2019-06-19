@@ -45,13 +45,19 @@
                         <li><a href="contact.aspx">Contact</a></li>
                         <li><a href="about.aspx">About</a></li>
                     </ul>
-
-                    <!-- if statement loged in -->
+                   <!-- if statement loged in -->
+                    <% if (Response.Cookies["LoggedIn"] == null || Response.Cookies["LoggedIn"].Value == "false") { %>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="userRegistrationForm.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                         <li><a href="userLogInForm.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                     </ul>
+                    <% } else { %>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="profileView.aspx"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                        <li><asp:LinkButton ID="logOutLinkButton" onclick="UserLogOut" runat="server"><span class="glyphicon glyphicon-log-out"></span>Logout</asp:LinkButton></li>
+                    </ul>
+                    <% } %>
                 </div>
             </div>
         </nav>

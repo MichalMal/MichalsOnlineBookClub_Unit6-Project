@@ -10,28 +10,28 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="fName">First Name:</label>
-                    <input type="text" class="form-control" id="fName" />
+                    <input type="text" class="form-control" id="fName" runat="server" />
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="lName">Last Name:</label>
-                    <input type="text" class="form-control" id="lName" />
+                    <input type="text" class="form-control" id="lName" runat="server" />
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" />
+            <input type="email" class="form-control" id="email" runat="server" />
         </div>
         <div class="form-group">
             <label for="dob">Date of Birth:</label>
-            <input type="date" class="form-control" id="dob" />
+            <input type="date" class="form-control" id="dob" runat="server" />
         </div>
 
         <div class="form-group">
             <label for="country">Country:</label>
-            <select class="form-control" id="country">
+            <select class="form-control" id="country" runat="server">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="0">South Africa</option>
                 <option value="1">USA</option>

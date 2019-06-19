@@ -20,10 +20,10 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="releaseDate">Date of Release:</label>
-            <input type="date" class="form-control" id="releaseDate" />
+            <label for="bookDescription">Date of Release:</label>
+            <input type="text" class="form-control" id="bookDescription" />
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <asp:button type="submit" class="btn btn-default">Submit</asp:button>
 
 </asp:Content>
 
