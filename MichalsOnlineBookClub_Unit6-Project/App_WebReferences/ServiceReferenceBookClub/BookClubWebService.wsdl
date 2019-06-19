@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegisterNewUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityBookQuestion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterNewUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterNewUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogInUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rememberMe" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogInUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogInUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgotPasswordSubmission">
+        <s:complexType />
+      </s:element>
+      <s:element name="ForgotPasswordSubmissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgotPasswordSubmissionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="securityBookQuestion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchBooks">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchBooksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchBooksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BookSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BookSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchBook">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchBookResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRating">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRatingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRatingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStars">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="starNum" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStarsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStarsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchReviews">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchReviewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchReviewsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckReviews">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckReviewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckReviewsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateNewReview">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rating" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateNewReviewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateNewReviewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitNewBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitNewBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitNewBookResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegisterNewUserSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterNewUser" />
+  </wsdl:message>
+  <wsdl:message name="RegisterNewUserSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterNewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogInUserSoapIn">
+    <wsdl:part name="parameters" element="tns:LogInUser" />
+  </wsdl:message>
+  <wsdl:message name="LogInUserSoapOut">
+    <wsdl:part name="parameters" element="tns:LogInUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSubmissionSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordSubmission" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSubmissionSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordSubmissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchUserSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchUser" />
+  </wsdl:message>
+  <wsdl:message name="FetchUserSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSoapIn">
+    <wsdl:part name="parameters" element="tns:EditUser" />
+  </wsdl:message>
+  <wsdl:message name="EditUserSoapOut">
+    <wsdl:part name="parameters" element="tns:EditUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchBooksSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchBooks" />
+  </wsdl:message>
+  <wsdl:message name="FetchBooksSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="BookSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:BookSession" />
+  </wsdl:message>
+  <wsdl:message name="BookSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:BookSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchBookSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchBook" />
+  </wsdl:message>
+  <wsdl:message name="FetchBookSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRatingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRating" />
+  </wsdl:message>
+  <wsdl:message name="GetRatingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStarsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStars" />
+  </wsdl:message>
+  <wsdl:message name="GetStarsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchReviewsSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchReviews" />
+  </wsdl:message>
+  <wsdl:message name="FetchReviewsSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckReviewsSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckReviews" />
+  </wsdl:message>
+  <wsdl:message name="CheckReviewsSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewReviewSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateNewReview" />
+  </wsdl:message>
+  <wsdl:message name="CreateNewReviewSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateNewReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitNewBookSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitNewBook" />
+  </wsdl:message>
+  <wsdl:message name="SubmitNewBookSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitNewBookResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BookClubWebServiceSoap">
+    <wsdl:operation name="RegisterNewUser">
+      <wsdl:input message="tns:RegisterNewUserSoapIn" />
+      <wsdl:output message="tns:RegisterNewUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogInUser">
+      <wsdl:input message="tns:LogInUserSoapIn" />
+      <wsdl:output message="tns:LogInUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPasswordSubmission">
+      <wsdl:input message="tns:ForgotPasswordSubmissionSoapIn" />
+      <wsdl:output message="tns:ForgotPasswordSubmissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchUser">
+      <wsdl:input message="tns:FetchUserSoapIn" />
+      <wsdl:output message="tns:FetchUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <wsdl:input message="tns:EditUserSoapIn" />
+      <wsdl:output message="tns:EditUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchBooks">
+      <wsdl:input message="tns:FetchBooksSoapIn" />
+      <wsdl:output message="tns:FetchBooksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BookSession">
+      <wsdl:input message="tns:BookSessionSoapIn" />
+      <wsdl:output message="tns:BookSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchBook">
+      <wsdl:input message="tns:FetchBookSoapIn" />
+      <wsdl:output message="tns:FetchBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRating">
+      <wsdl:input message="tns:GetRatingSoapIn" />
+      <wsdl:output message="tns:GetRatingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStars">
+      <wsdl:input message="tns:GetStarsSoapIn" />
+      <wsdl:output message="tns:GetStarsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchReviews">
+      <wsdl:input message="tns:FetchReviewsSoapIn" />
+      <wsdl:output message="tns:FetchReviewsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckReviews">
+      <wsdl:input message="tns:CheckReviewsSoapIn" />
+      <wsdl:output message="tns:CheckReviewsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewReview">
+      <wsdl:input message="tns:CreateNewReviewSoapIn" />
+      <wsdl:output message="tns:CreateNewReviewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitNewBook">
+      <wsdl:input message="tns:SubmitNewBookSoapIn" />
+      <wsdl:output message="tns:SubmitNewBookSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BookClubWebServiceSoap" type="tns:BookClubWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterNewUser">
+      <soap:operation soapAction="http://tempuri.org/RegisterNewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogInUser">
+      <soap:operation soapAction="http://tempuri.org/LogInUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPasswordSubmission">
+      <soap:operation soapAction="http://tempuri.org/ForgotPasswordSubmission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchUser">
+      <soap:operation soapAction="http://tempuri.org/FetchUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap:operation soapAction="http://tempuri.org/EditUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchBooks">
+      <soap:operation soapAction="http://tempuri.org/FetchBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookSession">
+      <soap:operation soapAction="http://tempuri.org/BookSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchBook">
+      <soap:operation soapAction="http://tempuri.org/FetchBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRating">
+      <soap:operation soapAction="http://tempuri.org/GetRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStars">
+      <soap:operation soapAction="http://tempuri.org/GetStars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchReviews">
+      <soap:operation soapAction="http://tempuri.org/FetchReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckReviews">
+      <soap:operation soapAction="http://tempuri.org/CheckReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewReview">
+      <soap:operation soapAction="http://tempuri.org/CreateNewReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitNewBook">
+      <soap:operation soapAction="http://tempuri.org/SubmitNewBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BookClubWebServiceSoap12" type="tns:BookClubWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterNewUser">
+      <soap12:operation soapAction="http://tempuri.org/RegisterNewUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogInUser">
+      <soap12:operation soapAction="http://tempuri.org/LogInUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPasswordSubmission">
+      <soap12:operation soapAction="http://tempuri.org/ForgotPasswordSubmission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchUser">
+      <soap12:operation soapAction="http://tempuri.org/FetchUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap12:operation soapAction="http://tempuri.org/EditUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchBooks">
+      <soap12:operation soapAction="http://tempuri.org/FetchBooks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookSession">
+      <soap12:operation soapAction="http://tempuri.org/BookSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchBook">
+      <soap12:operation soapAction="http://tempuri.org/FetchBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRating">
+      <soap12:operation soapAction="http://tempuri.org/GetRating" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStars">
+      <soap12:operation soapAction="http://tempuri.org/GetStars" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchReviews">
+      <soap12:operation soapAction="http://tempuri.org/FetchReviews" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckReviews">
+      <soap12:operation soapAction="http://tempuri.org/CheckReviews" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewReview">
+      <soap12:operation soapAction="http://tempuri.org/CreateNewReview" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitNewBook">
+      <soap12:operation soapAction="http://tempuri.org/SubmitNewBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BookClubWebService">
+    <wsdl:port name="BookClubWebServiceSoap" binding="tns:BookClubWebServiceSoap">
+      <soap:address location="http://localhost:62248/BookClubWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BookClubWebServiceSoap12" binding="tns:BookClubWebServiceSoap12">
+      <soap12:address location="http://localhost:62248/BookClubWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

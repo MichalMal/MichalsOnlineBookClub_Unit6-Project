@@ -11,4 +11,15 @@ public partial class _default : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void UserLogOut(object sender, EventArgs e)
+    {
+        if (Response.Cookies["LoggedIn"] != null)
+        {
+            HttpCookie loggedInCookie = new HttpCookie("LoggedIn", "false");
+            Response.SetCookie(loggedInCookie);
+
+            Response.Redirect("Default.aspx");
+        }
+    }
 }

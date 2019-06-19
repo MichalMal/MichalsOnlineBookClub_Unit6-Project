@@ -5,7 +5,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderBody" Runat="Server">
 
-        <h1>Book View Page    (name of Book) </h1>
+        <h1>
+            <asp:label runat="server" text="Book Name" id="bookNameTitle"></asp:label>
+        </h1>
 
 </asp:Content>
 
