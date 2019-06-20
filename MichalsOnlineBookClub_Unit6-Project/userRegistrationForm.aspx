@@ -32,7 +32,7 @@
         <div class="form-group">
             <label for="country">Country:</label>
             <select class="form-control" id="country" runat="server">
-                <option value="" disabled selected>Choose your option</option>
+                <option value=""  disabled="disabled" selected="selected">Choose your option</option>
                 <option value="0">South Africa</option>
                 <option value="1">USA</option>
                 <option value="2">Germany</option>

@@ -1,0 +1,147 @@
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'System.Web.UI.HtmlControls.HtmlInputGenericControl' AND StrComp([Password], System.Web.UI.HtmlControls.HtmlInputPassword, 0) = 0     as the query
+Connected to DB
+Error: System.Data.OleDb.OleDbException (0x80040E10): No value given for one or more required parameters.
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   at System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.OleDb.OleDbCommand.ExecuteReader()
+   at BookClubWebService.ExecuteQuery(String query) in C:\Users\Michal\source\repos\MichalsOnlineBookClub_Unit6-Project2\WebServiceBookClub\App_Code\BookClubWebService.cs:line 73
+Disconnected from DB
+failed to log in
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'michalmal@hotmail.co.za' AND StrComp([Password], password, 0) = 0     as the query
+Connected to DB
+User Has Succeeded in logging in
+Disconnected from DB
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'michalmal@hotmail.co.za' AND StrComp([Password], password, 0) = 0     as the query
+Connected to DB
+User Has Succeeded in logging in
+Disconnected from DB
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'michalmal@hotmail.co.za' AND StrComp([Password], password, 0) = 0     as the query
+Connected to DB
+User Has Succeeded in logging in
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB

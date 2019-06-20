@@ -170,7 +170,7 @@ public class BookClubWebService : System.Web.Services.WebService
             Session["AuthUser"] = email;
 
             DisconnectDatabase();
-            return "Logged in successfully";
+            return "User Logged in successfully";
 
         }
 

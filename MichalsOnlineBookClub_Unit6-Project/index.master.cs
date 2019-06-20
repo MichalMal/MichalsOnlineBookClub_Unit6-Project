@@ -19,7 +19,7 @@ public partial class _default : System.Web.UI.MasterPage
             HttpCookie loggedInCookie = new HttpCookie("LoggedIn", "false");
             Response.SetCookie(loggedInCookie);
 
-            Response.Redirect("Default.aspx");
+            Response.Redirect("~/");
         }
     }
 }

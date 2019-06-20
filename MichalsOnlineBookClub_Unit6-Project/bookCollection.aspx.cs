@@ -22,9 +22,11 @@ public partial class bookCollection : System.Web.UI.Page
         {
             foreach (GridViewRow gr in bookList.Rows)
             {
-                Button button = new Button();
-                button.Text = "View";
-                button.CssClass = "btn btn-primary";
+                Button button = new Button
+                {
+                    Text = "View",
+                    CssClass = "btn btn-primary"
+                };
                 button.Click += (s, ev) =>
                 {
                     ws.BookSession(Int32.Parse(gr.Cells[0].Text));

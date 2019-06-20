@@ -46,7 +46,7 @@
                         <li><a href="about.aspx">About</a></li>
                     </ul>
                    <!-- if statement loged in -->
-                    <% if (Response.Cookies["LoggedIn"] == null || Response.Cookies["LoggedIn"].Value == "false") { %>
+                    <% if (Request.Cookies["LoggedIn"] == null || (Request.Cookies["LoggedIn"] != null && Request.Cookies["LoggedIn"].Value!= "true")) { %>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="userRegistrationForm.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
