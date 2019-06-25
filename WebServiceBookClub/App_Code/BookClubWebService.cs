@@ -178,7 +178,6 @@ public class BookClubWebService : System.Web.Services.WebService
         // Display the error message
         Logging("failed to log in");
         return "Incorrect Username or password!";
-
     }
 
     [WebMethod]
@@ -190,10 +189,7 @@ public class BookClubWebService : System.Web.Services.WebService
     [WebMethod(EnableSession = true)]
     public DataTable FetchUser()
     {
-
         Logging($"The session variable should be an email of {(string)Session["AuthUser"]}");
-
-
         string queryString = $"SELECT * FROM [ClubUsers] WHERE Email = '{(string)Session["AuthUser"]}'";
         ConnectToDatabase();
 
@@ -207,8 +203,6 @@ public class BookClubWebService : System.Web.Services.WebService
         dba.Fill(ds, "ClubUsers");
 
         DataTable dt = ds.Tables["ClubUsers"];
-
-
         DisconnectDatabase();
 
         return dt;
@@ -435,7 +429,7 @@ public class BookClubWebService : System.Web.Services.WebService
         // Check for matches.
         if (ExecuteCommand(queryString))
         {
-            confirmation = "Book Submitted";
+            confirmation = "Book Submitted! Go to the List Of Books page to see it";
         }
         else
         {

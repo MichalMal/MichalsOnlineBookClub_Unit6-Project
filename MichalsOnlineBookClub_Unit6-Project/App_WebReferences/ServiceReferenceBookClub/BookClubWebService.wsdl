@@ -40,6 +40,12 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="LogOutUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="LogOutUserResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="ForgotPasswordSubmission">
         <s:complexType />
       </s:element>
@@ -227,6 +233,12 @@
   <wsdl:message name="LogInUserSoapOut">
     <wsdl:part name="parameters" element="tns:LogInUserResponse" />
   </wsdl:message>
+  <wsdl:message name="LogOutUserSoapIn">
+    <wsdl:part name="parameters" element="tns:LogOutUser" />
+  </wsdl:message>
+  <wsdl:message name="LogOutUserSoapOut">
+    <wsdl:part name="parameters" element="tns:LogOutUserResponse" />
+  </wsdl:message>
   <wsdl:message name="ForgotPasswordSubmissionSoapIn">
     <wsdl:part name="parameters" element="tns:ForgotPasswordSubmission" />
   </wsdl:message>
@@ -308,6 +320,10 @@
       <wsdl:input message="tns:LogInUserSoapIn" />
       <wsdl:output message="tns:LogInUserSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="LogOutUser">
+      <wsdl:input message="tns:LogOutUserSoapIn" />
+      <wsdl:output message="tns:LogOutUserSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="ForgotPasswordSubmission">
       <wsdl:input message="tns:ForgotPasswordSubmissionSoapIn" />
       <wsdl:output message="tns:ForgotPasswordSubmissionSoapOut" />
@@ -370,6 +386,15 @@
     </wsdl:operation>
     <wsdl:operation name="LogInUser">
       <soap:operation soapAction="http://tempuri.org/LogInUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOutUser">
+      <soap:operation soapAction="http://tempuri.org/LogOutUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -499,6 +524,15 @@
     </wsdl:operation>
     <wsdl:operation name="LogInUser">
       <soap12:operation soapAction="http://tempuri.org/LogInUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogOutUser">
+      <soap12:operation soapAction="http://tempuri.org/LogOutUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

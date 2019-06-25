@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceReferenceBookClub;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,8 @@ public partial class _default : System.Web.UI.MasterPage
         {
             HttpCookie loggedInCookie = new HttpCookie("LoggedIn", "false");
             Response.SetCookie(loggedInCookie);
-
+            BookClubWebServiceSoapClient ws = new BookClubWebServiceSoapClient();
+            ws.LogOutUser();
             Response.Redirect("~/");
         }
     }
