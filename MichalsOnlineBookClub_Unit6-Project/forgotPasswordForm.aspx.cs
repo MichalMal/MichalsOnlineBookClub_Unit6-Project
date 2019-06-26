@@ -20,7 +20,8 @@ public partial class forgotPasswordForm : System.Web.UI.Page
     {
         BookClubWebServiceSoapClient ws = new BookClubWebServiceSoapClient();
         string submissionResponce = ws.ForgotPasswordSubmission();
+        messageBox.Visible = true;
+        messageBox.InnerHtml = submissionResponce;
 
-        Response.Redirect("~/");
     }
 }

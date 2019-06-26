@@ -390,7 +390,7 @@ public class BookClubWebService : System.Web.Services.WebService
         {
 
             Logging("Something Went wrong :" + exc.ToString());
-            endpoint = true;
+            endpoint = false;
         }
         Logging("endpoint is :" + endpoint.ToString());
         return endpoint;
