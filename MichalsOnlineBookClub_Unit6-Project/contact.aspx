@@ -6,9 +6,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderBody" runat="Server">
 
-    <div class="container home-banner">
+
         <h1>Contact us page</h1>
-    </div>
+
 
 </asp:Content>
 

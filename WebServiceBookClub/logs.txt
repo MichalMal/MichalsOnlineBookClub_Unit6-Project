@@ -467,3 +467,87 @@ Disconnected from DB
 The session variable should be an email of michalmal@hotmail.co.za
 Connected to DB
 Disconnected from DB
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'michalmal@hotmail.co.za' AND StrComp([Password], password, 0) = 0     as the query
+Connected to DB
+User Has Succeeded in logging in
+Disconnected from DB
+The session variable should be an email of michalmal@hotmail.co.za
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+SELECT [rating],[ratingDescription] FROM [Reviews] WHERE book = 2
+Connected to DB
+Disconnected from DB
+User session is: michalmal@hotmail.co.za. And book session is: 2
+The session variable should be an email of michalmal@hotmail.co.za
+Connected to DB
+Disconnected from DB
+Connected to DB
+User Has Reviewed
+Disconnected from DB
+endpoint is :True
+Connected to DB
+Disconnected from DB
+Connected to DB
+SELECT [rating],[ratingDescription] FROM [Reviews] WHERE book = 2
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+SELECT [rating],[ratingDescription] FROM [Reviews] WHERE book = 1
+Connected to DB
+Disconnected from DB
+Trying to Log In using : SELECT * FROM [ClubUsers] WHERE Email = 'michalmal@hotmail.co.za' AND StrComp([Password], password, 0) = 0     as the query
+Connected to DB
+User Has Succeeded in logging in
+Disconnected from DB
+The session variable should be an email of michalmal@hotmail.co.za
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+SELECT [rating],[ratingDescription] FROM [Reviews] WHERE book = 2
+Connected to DB
+Disconnected from DB
+User session is: michalmal@hotmail.co.za. And book session is: 2
+The session variable should be an email of michalmal@hotmail.co.za
+Connected to DB
+Disconnected from DB
+Connected to DB
+User Has Reviewed
+Disconnected from DB
+endpoint is :True
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+Disconnected from DB
+Connected to DB
+SELECT [rating],[ratingDescription] FROM [Reviews] WHERE book = 4
+Connected to DB
+Disconnected from DB
+User session is: michalmal@hotmail.co.za. And book session is: 4
+The session variable should be an email of michalmal@hotmail.co.za
+Connected to DB
+Disconnected from DB
+Connected to DB
+User Has Not Reviewed(no Rows)
+Disconnected from DB
+endpoint is :False
